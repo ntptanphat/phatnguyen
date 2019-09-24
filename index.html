@@ -11,6 +11,21 @@
   <!-- <link rel="stylesheet" href="assets/css/lightbox.min.css"> -->
   <link rel="stylesheet" type="text/css" href="assets/css/viewer.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <style type="text/css">
+    .toggleIcon {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .navbar-collapse.menu-show-mobile #toggleMenu {
+        display: none;
+      }
+
+      .toggleIcon {
+        display: inline-block;
+      }
+    }
+    
+  </style>
 </head>
 <body>
  <header class="bg-white fixed-top">
@@ -19,35 +34,59 @@
         <div class="col-12">
           <navbar class="navbar navbar-expand-md">
             <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo"></a>
-            <div class="navbar-collapse">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Team</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Gallary</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
-                </li>
-              </ul>
-              <form class="form-inline mt-2 mt-md-0">
-                <img class="heading-icon" src="assets/images/icon/shoppingcard_icon.png" alt="card">
-                <img class="heading-icon" src="assets/images/icon/search_icon.png" alt="search">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </form>
+              <div class="navbar-collapse menu-show-pc menu-mobile-dn">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gallary</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>    
+              </div>
 
-            </div>
+              <div class="menu-mobile">
+                  <img class="heading-icon" src="assets/images/icon/shoppingcard_icon.png" alt="card">
+                  <img class="heading-icon" src="assets/images/icon/search_icon.png" alt="search">
+                   <a href="javascript:void(0);" class="icon toggleIcon" onclick="toggleMenu()">
+                   <i class="fa fa-bars" aria-hidden="true"></i>
+                  </a>   
+              </div>
           </navbar>
+           <div class="navbar-collapse menu-show-mobile menu-pc-dn menu-mobile-db" id="toggleMenu">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gallary</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                </ul>    
+              </div>
         </div>
       </div>
     </div>
@@ -83,19 +122,19 @@
       <section class="service">
          <div class="row">
           <div class="col-4 col-xs-12">
-            <div class="service-item">
+            <div class="service-item wow rollIn" data-wow-delay="0.3s">
                <img src="assets/images/service/service1.png" alt="service">
             </div>
          </div><!-- End col-4 -->
 
          <div class="col-4 col-xs-12">
-            <div class="service-item">
+            <div class="service-item wow rollIn" data-wow-delay="0.2s">
                <img src="assets/images/service/service2.png" alt="service">
             </div>
          </div><!-- End col-4 -->
 
          <div class="col-4 col-xs-12">
-            <div class="service-item">
+            <div class="service-item wow rollIn" data-wow-delay="0.3s">
                <img src="assets/images/service/service3.png" alt="service">
             </div>
          </div><!-- End col-4 -->
@@ -105,7 +144,7 @@
       <section class="organic">
          <div class="row">
           <div class="col-6 col-xs-12">
-            <div class="summary-content">
+            <div class="summary-content wow slideInLeft" data-wow-delay="1s">
                <img src="assets/images/organic.jpg" alt="summary">
                <div class="summary-title">
                  <div class="main-title color-main">organic</div>
@@ -117,7 +156,7 @@
          <div class="col-6 col-xs-12">
              <div class="row organic-pictures">
                 <div class="col-6">
-                  <div class="product-item organic-item">
+                  <div class="product-item organic-item wow slideInLeft" data-wow-delay="0.6s">
                      <div class="product-image">
                        <img src="assets/images/organic_image_item1.jpg" alt="fresh">
                      </div>
@@ -130,7 +169,7 @@
                </div><!-- End col-6 -->
 
               <div class="col-6">
-                  <div class="product-item organic-item">
+                  <div class="product-item organic-item wow bounceInDown" data-wow-delay="0.7s">
                      <div class="product-image">
                        <img src="assets/images/organic_image_item2.jpg" alt="fresh">
                      </div>
@@ -143,7 +182,7 @@
                </div><!-- End col-6 -->
 
                <div class="col-6">
-                  <div class="product-item organic-item">
+                  <div class="product-item organic-item wow bounceInUp" data-wow-delay="0.8s">
                      <div class="product-image">
                        <img src="assets/images/organic_image_item3.jpg" alt="fresh">
                      </div>
@@ -156,7 +195,7 @@
                </div><!-- End col-6 -->
 
                <div class="col-6">
-                  <div class="product-item organic-item">
+                  <div class="product-item organic-item wow slideInRight" data-wow-delay="1.6s">
                      <div class="product-image">
                        <img src="assets/images/organic_image_item4.jpg" alt="fresh">
                      </div>
@@ -197,7 +236,7 @@
          <div class="col-6 col-xs-12">
              <div class="row fresh-pictures">
                 <div class="col-6">
-                  <div class="product-item fresh-item">
+                  <div class="product-item fresh-item wow slideInLeft" data-wow-delay="1s">
                      <div class="product-image">
                         <img src="assets/images/fresh_image_item1.jpg">
                      </div>
@@ -210,7 +249,7 @@
                </div><!-- End col-6 -->
 
                <div class="col-6">
-                  <div class="product-item fresh-item">
+                  <div class="product-item fresh-item wow slideInRight" data-wow-delay="1s">
                      <div class="product-image">
                        <img src="assets/images/fresh_image_item2.jpg" alt="fresh">
                      </div>
@@ -223,7 +262,7 @@
                </div><!-- End col-6 -->
 
                <div class="col-6">
-                  <div class="product-item fresh-item">
+                  <div class="product-item fresh-item wow bounceInUp" data-wow-delay="1s">
                      <div class="product-image">
                        <img src="assets/images/fresh_image_item3.jpg" alt="fresh">
                      </div>
@@ -236,7 +275,7 @@
                </div><!-- End col-6 -->
 
                <div class="col-6">
-                  <div class="product-item fresh-item">
+                  <div class="product-item fresh-item wow bounceInDown" data-wow-delay="1s">
                      <div class="product-image">
                        <img src="assets/images/fresh_image_item4.jpg" alt="fresh">
                      </div>
@@ -251,7 +290,7 @@
          </div><!-- End col-6 -->
 
           <div class="col-6 col-xs-12">
-            <div class="summary-content">
+            <div class="summary-content wow bounceInDown" data-wow-delay="1s">
                <img src="assets/images/organic.jpg" alt="summary">
                <div class="summary-title">
                  <div class="main-title color-sub">fresh</div>
@@ -268,7 +307,7 @@
         </div>
         <div class="row">
           <div class="col-4 col-xs-12">
-            <div class="team-item">
+            <div class="team-item wow rollIn" data-wow-delay="0.3s">
               <img src="assets/images/team_image_item1.jpg">
               <div class="info">
                 <div class="name">Name</div>
@@ -277,7 +316,7 @@
             </div>
           </div>
           <div class="col-4 col-xs-12">
-            <div class="team-item">
+            <div class="team-item wow rollIn" data-wow-delay="0.4s">
               <img src="assets/images/team_image_item2.jpg">
               <div class="info">
                 <div class="name">Name</div>
@@ -286,7 +325,7 @@
             </div>
           </div>
           <div class="col-4 col-xs-12">
-            <div class="team-item">
+            <div class="team-item wow rollIn" data-wow-delay="0.5s">
               <img src="assets/images/team_image_item3.jpg">
               <div class="info">
                 <div class="name">Name</div>
@@ -304,22 +343,22 @@
         </div>
         <div class="row">
           <div class="col-3 col-xs-6">
-             <div class="partner-item">
+             <div class="partner-item wow rollIn" data-wow-delay="0.2s">
                <img src="assets/images/partner_image_item1.png">
              </div>
           </div>
            <div class="col-3 col-xs-6">
-             <div class="partner-item">
+             <div class="partner-item wow rollIn" data-wow-delay="0.3s">
                <img src="assets/images/partner_image_item2.png">
              </div>
           </div>
            <div class="col-3 col-xs-6">
-             <div class="partner-item">
+             <div class="partner-item wow rollIn" data-wow-delay="0.4s">
                <img src="assets/images/partner_image_item3.png">
              </div>
           </div>
           <div class="col-3 col-xs-6">
-             <div class="partner-item">
+             <div class="partner-item wow rollIn" data-wow-delay="0.5s">
                <img src="assets/images/partner_image_item4.png">
              </div>
           </div>
@@ -424,6 +463,15 @@
 
   <script type="text/javascript">
      $(document).on('ready', function() {
+
+           wow = new WOW(
+          {
+            animateClass: 'animated',
+            offset:       100
+          }
+          );
+          wow.init();
+
           $(".lazy").slick({
             autoplay: true,
             lazyLoad: 'ondemand', // ondemand progressive anticipated
@@ -599,6 +647,7 @@
 
 
 
+         
 
 
 
@@ -607,8 +656,17 @@
 
 
 
-
-    });
+    }); 
+    function toggleMenu() {
+      console.log("Click");
+      var x = document.getElementById("toggleMenu");
+      console.log(x);
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block ";
+      }
+    }
     </script>
 
 </body>
