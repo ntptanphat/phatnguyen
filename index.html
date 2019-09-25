@@ -34,38 +34,46 @@
         <div class="col-12">
           <navbar class="navbar navbar-expand-md">
             <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo"></a>
-              <div class="navbar-collapse menu-show-pc menu-mobile-dn">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Gallary</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-                </ul>    
-              </div>
-
-              <div class="menu-mobile">
+             <div class="menu-mobile">
                   <img class="heading-icon" src="assets/images/icon/shoppingcard_icon.png" alt="card">
                   <img class="heading-icon" src="assets/images/icon/search_icon.png" alt="search">
                    <a href="javascript:void(0);" class="icon toggleIcon" onclick="toggleMenu()">
                    <i class="fa fa-bars" aria-hidden="true"></i>
                   </a>   
               </div>
+            <div class="navbar-collapse menu-show-pc menu-mobile-dn" id="toggleMenu">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Gallary</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+              </ul>    
+            </div>
+
+             <!--  <div class="menu-mobile">
+                  <img class="heading-icon" src="assets/images/icon/shoppingcard_icon.png" alt="card">
+                  <img class="heading-icon" src="assets/images/icon/search_icon.png" alt="search">
+                   <a href="javascript:void(0);" class="icon toggleIcon" onclick="toggleMenu()">
+                   <i class="fa fa-bars" aria-hidden="true"></i>
+                  </a>   
+              </div> -->
           </navbar>
-           <div class="navbar-collapse menu-show-mobile menu-pc-dn menu-mobile-db" id="toggleMenu">
+    
+           <!-- <div class="navbar-collapse menu-show-mobile menu-pc-dn menu-mobile-db">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
                     <a class="nav-link" href="#">Home</a>
@@ -86,7 +94,7 @@
                     <a class="nav-link" href="#">Contact Us</a>
                   </li>
                 </ul>    
-              </div>
+              </div> -->
         </div>
       </div>
     </div>
@@ -102,7 +110,7 @@
                 <div class="banner-content">
                   <div class="main-heading-banner">Eco-Friendly</div>
                   <div class="sub-heading-banner">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
-                  <button class="btn btn-submit">Read more</button>
+                  <button class="btn btn-submit btn-pd-sp">Read more</button>
                 </div>
               </div>
               <div class="banner-item">
@@ -110,7 +118,7 @@
                  <div class="banner-content">
                     <div class="main-heading-banner">Eco-Friendly</div>
                     <div class="sub-heading-banner">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
-                    <button class="btn btn-submit">Read more</button>
+                    <button class="btn btn-submit btn-pd-sp">Read more</button>
                 </div>
               </div>
             </section>
@@ -144,7 +152,7 @@
       <section class="organic">
          <div class="row">
           <div class="col-6 col-xs-12">
-            <div class="summary-content wow slideInLeft" data-wow-delay="1s">
+            <div class="summary-content wow slideInLeft" data-wow-delay="0.3s">
                <img src="assets/images/organic.jpg" alt="summary">
                <div class="summary-title">
                  <div class="main-title color-main">organic</div>
@@ -169,7 +177,7 @@
                </div><!-- End col-6 -->
 
               <div class="col-6">
-                  <div class="product-item organic-item wow bounceInDown" data-wow-delay="0.7s">
+                  <div class="product-item organic-item wow bounceInUp" data-wow-delay="0.7s">
                      <div class="product-image">
                        <img src="assets/images/organic_image_item2.jpg" alt="fresh">
                      </div>
@@ -195,7 +203,7 @@
                </div><!-- End col-6 -->
 
                <div class="col-6">
-                  <div class="product-item organic-item wow slideInRight" data-wow-delay="1.6s">
+                  <div class="product-item organic-item wow slideInRight" data-wow-delay="0.9s">
                      <div class="product-image">
                        <img src="assets/images/organic_image_item4.jpg" alt="fresh">
                      </div>
@@ -236,7 +244,7 @@
          <div class="col-6 col-xs-12">
              <div class="row fresh-pictures">
                 <div class="col-6">
-                  <div class="product-item fresh-item wow slideInLeft" data-wow-delay="1s">
+                  <div class="product-item fresh-item wow slideInLeft" data-wow-delay="0.5s">
                      <div class="product-image">
                         <img src="assets/images/fresh_image_item1.jpg">
                      </div>
@@ -249,7 +257,7 @@
                </div><!-- End col-6 -->
 
                <div class="col-6">
-                  <div class="product-item fresh-item wow slideInRight" data-wow-delay="1s">
+                  <div class="product-item fresh-item wow slideInRight" data-wow-delay="0.6s">
                      <div class="product-image">
                        <img src="assets/images/fresh_image_item2.jpg" alt="fresh">
                      </div>
@@ -262,7 +270,7 @@
                </div><!-- End col-6 -->
 
                <div class="col-6">
-                  <div class="product-item fresh-item wow bounceInUp" data-wow-delay="1s">
+                  <div class="product-item fresh-item wow bounceInUp" data-wow-delay="0.4s">
                      <div class="product-image">
                        <img src="assets/images/fresh_image_item3.jpg" alt="fresh">
                      </div>
@@ -275,7 +283,7 @@
                </div><!-- End col-6 -->
 
                <div class="col-6">
-                  <div class="product-item fresh-item wow bounceInDown" data-wow-delay="1s">
+                  <div class="product-item fresh-item wow bounceInDown" data-wow-delay="0.7s">
                      <div class="product-image">
                        <img src="assets/images/fresh_image_item4.jpg" alt="fresh">
                      </div>
@@ -310,8 +318,8 @@
             <div class="team-item wow rollIn" data-wow-delay="0.3s">
               <img src="assets/images/team_image_item1.jpg">
               <div class="info">
-                <div class="name">Name</div>
-                <div class="position">Position</div>
+                <div class="name">Ryan Wilson</div>
+                <div class="position">Fouder</div>
               </div>
             </div>
           </div>
@@ -319,8 +327,8 @@
             <div class="team-item wow rollIn" data-wow-delay="0.4s">
               <img src="assets/images/team_image_item2.jpg">
               <div class="info">
-                <div class="name">Name</div>
-                <div class="position">Position</div>
+                <div class="name">Jil Peterson</div>
+                <div class="position">Gadern Manager</div>
               </div>
             </div>
           </div>
@@ -328,8 +336,8 @@
             <div class="team-item wow rollIn" data-wow-delay="0.5s">
               <img src="assets/images/team_image_item3.jpg">
               <div class="info">
-                <div class="name">Name</div>
-                <div class="position">Position</div>
+                <div class="name">Sam Robinson</div>
+                <div class="position">Farmyard Coodinater</div>
               </div>
             </div>
           </div>
@@ -397,9 +405,9 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-4 col-xs-12">
+          <div class="col-4 col-xs-12 pc-pr-60">
             <div class="logo-footer"><img src="assets/images/logo.png"></div>
-            <p class="color-gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <p class="color-gray">GreenDay is an organic farm located in Califonia. We offer healthy foods and products to out clients</p>
             <hr />
             <ul class="list-address-with-icon">
               <li class="phone"><i class="fa fa-phone" aria-hidden="true"></i>+1 323-913-4688</li>
@@ -407,9 +415,9 @@
               <li class="address"><i class="fa fa-location-arrow" aria-hidden="true"></i>4730 Crystal Springs Dr, Los Angeles, CA 90027</li>
             </ul>
           </div>
-          <div class="col-4 col-xs-12">
+          <div class="col-4 col-xs-12 pc-pd-30">
             <h3 class="second-heading">Newsletter</h3>
-            <p class="caption">Lorem Ipsum is simply dummy text</p>
+            <p class="caption color-gray">Join out email newsletter for news and tips</p>
             <form>
                <div class="form-group mb-5"> 
                   <input class="form-control bg-dard-gray border-dard-gray h-55 text-center" placeholder="Enter Your E-mail"></input>
@@ -629,44 +637,32 @@
             }
           }).viewer(options);
 
-          // toggleButtons(options.inline ? 'inline' : 'modal');
-
-          // $toggles.on('change', 'input', function () {
-          //   var $input = $(this);
-          //   var name = $input.attr('name');
-
-          //   options[name] = name === 'inline' ? $input.data('value') : $input.prop('checked');
-          //   $images.viewer('destroy').viewer(options);
-          //   toggleButtons(options.inline ? 'inline' : 'modal');
-          // });
-
-
-
-
-
-
-
-
-         
-
-
-
-
-
-
-
-
     }); 
     function toggleMenu() {
-      console.log("Click");
+      // console.log("Click");
       var x = document.getElementById("toggleMenu");
-      console.log(x);
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block ";
-      }
+      // x.toggleClass('menu-show');
+      //  x.addClass('menu-show');
+      // if (x.style.display === "block") {
+      //   x.style.display = "none";
+      // } else {
+      //   x.style.display = "block ";
+      // }
     }
+
+    $(".toggleIcon").click(function(){
+      $("#toggleMenu").toggleClass('menu-show');
+    });
+
+    //  function toggleMenu() {
+    //   console.log("Click");
+    //   var x = document.getElementById("toggleMenu");
+    //   if (x.style.display === "block") {
+    //     x.style.display = "none";
+    //   } else {
+    //     x.style.display = "block ";
+    //   }
+    // }
     </script>
 
 </body>
