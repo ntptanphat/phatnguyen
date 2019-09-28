@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+.banner {
+  overflow-x: hidden;
+}
+
 .slider {
     width: 100%;
 }
